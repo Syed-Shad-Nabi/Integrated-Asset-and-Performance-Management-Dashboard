@@ -1,0 +1,7 @@
+flask
+flask-MySQL
+flask-cors
+MySQL-connector-python
+python-dotenv
+PyJWT
+

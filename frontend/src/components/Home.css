@@ -1,0 +1,65 @@
+/* ===== PAGE ===== */
+.page {
+  padding: 20px;
+  background: #f5f5f5;
+  overflow-x: auto;
+}
+
+/* ===== HEADER ===== */
+.ongc-header {
+  background: linear-gradient(90deg, #8b0000, #000000);
+  color: white;
+  padding: 14px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ===== TABLE ===== */
+.budget-table {
+  border-collapse: collapse;
+  width: 1800px;
+  background: white;
+}
+
+.budget-table th,
+.budget-table td {
+  border: 1px solid #333;
+  padding: 6px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.budget-table th {
+  background: #111;
+  color: white;
+}
+
+/* ===== SECTION COLORS ===== */
+.capital { background: #eeeeee; }
+.contractual { background: #fff2cc; }
+.store { background: #ddebf7; }
+.spare { background: #fce4d6; }
+.others { background: #e7e6e6; }
+.misc { background: #fff59d; }
+.total { background: #c6e0b4; font-weight: bold; }
+
+/* ===== TOTAL ROW ===== */
+.total-row td {
+  font-weight: bold;
+  background: #d9d9d9;
+}
+
+/* ===== YEAR COLUMN ===== */
+.year-cell {
+  background: #8b0000;
+  color: white;
+  font-weight: bold;
+}
+
+/* ===== SECTION COLUMN ===== */
+.section-cell {
+  font-weight: bold;
+  background: #fafafa;
+}

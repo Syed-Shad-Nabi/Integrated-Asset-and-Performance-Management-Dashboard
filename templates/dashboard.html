@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ONGC Dashboard</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+        }
+
+        header {
+            background: #b30000;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        header img {
+            height: 55px;
+            background: white;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        header h2 {
+            margin: 0;
+            font-size: 22px;
+        }
+
+        .container {
+            padding: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+        }
+
+        .card i {
+            font-size: 40px;
+            color: #b30000;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin: 10px 0 5px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="{{ url_for('static', filename='ongc_logo.png') }}">
+    <h2>ONGC – Inventory & Operations Dashboard</h2>
+</header>
+
+<div class="container">
+
+    <a href="/machinery" class="card">
+        <i class="fas fa-industry"></i>
+        <h3>Machinery & Equipment</h3>
+        <p>View equipment inventory</p>
+    </a>
+
+    <a href="/budget" class="card">
+        <i class="fas fa-indian-rupee-sign"></i>
+        <h3>Budget</h3>
+        <p>Capital & Utilization</p>
+    </a>
+
+    <a href="/procurement" class="card">
+        <i class="fas fa-box"></i>
+        <h3>Procurement</h3>
+        <p>Purchase & supply tracking</p>
+    </a>
+
+    <a href="/rate-contracts" class="card">
+        <i class="fas fa-file-contract"></i>
+        <h3>Rate Contracts</h3>
+        <p>Vendor rate agreements</p>
+    </a>
+
+    <a href="/performance" class="card">
+        <i class="fas fa-chart-line"></i>
+        <h3>Performance</h3>
+        <p>KPIs & utilization</p>
+    </a>
+
+    <a href="/drill-sites" class="card">
+        <i class="fas fa-oil-well"></i>
+        <h3>Drill Site Status</h3>
+        <p>Live drilling status</p>
+    </a>
+
+    <a href="/events" class="card">
+        <i class="fas fa-calendar-days"></i>
+        <h3>Upcoming Events</h3>
+        <p>Planned activities</p>
+    </a>
+
+</div>
+
+</body>
+</html>
